@@ -241,3 +241,18 @@ func TestCase18(t *testing.T) {
 	}
 
 }
+
+func TestCase25(t *testing.T) {
+	// Arrange
+	give := 25
+	want := "Buzz"
+
+	// Act
+	got := FizzBuzz(give)
+
+	// Assert
+	if want != got {
+		t.Errorf("give %d expected %s, actual %s", give, want, got)
+	}
+
+}
