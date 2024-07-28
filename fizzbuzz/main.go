@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	fmt.Println("Hello, FizzBuzz")
@@ -19,5 +22,5 @@ func FizzBuzz(n int) string {
 	if n == 2 {
 		return "2"
 	}
-	return "1"
+	return strconv.Itoa(n)
 }
