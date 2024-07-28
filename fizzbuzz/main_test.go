@@ -8,7 +8,22 @@ func TestCase1(t *testing.T) {
 	want := "1"
 
 	// Act
-	got := FizzBuzz(1)
+	got := FizzBuzz(give)
+
+	// Assert
+	if want != got {
+		t.Errorf("give %d expected %s, actual %s", give, want, got)
+	}
+
+}
+
+func TestCase2(t *testing.T) {
+	// Arrange
+	give := 2
+	want := "2"
+
+	// Act
+	got := FizzBuzz(give)
 
 	// Assert
 	if want != got {
